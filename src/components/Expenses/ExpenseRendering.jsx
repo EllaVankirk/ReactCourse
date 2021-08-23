@@ -5,6 +5,7 @@ import ExpensesFilter from "./ExpenseFilter";
 import "./ExpenseRendering.css";
 import "./ExpenseFilter.css";
 import ExpensesList from "./ExpensesList";
+import ExpensesChart from "./ExpensesChart";
 
 //This component brings in the ExpenseItem component to display all of the expenses. We call the ExpenseItem multiple times and pass in the data to each item.
 
@@ -27,6 +28,7 @@ function ExpenseRendering(props) {
           selected={filteredYear}
           onSaveFilterSelection={saveFilterSelectionHandler}
         />
+        <ExpensesChart expenses={filteredExpenses}/>
         <ExpensesList items={filteredExpenses}/>
       </Card>
     </div>
