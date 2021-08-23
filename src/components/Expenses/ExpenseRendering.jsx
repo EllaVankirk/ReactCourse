@@ -28,7 +28,7 @@ function ExpenseRendering(props) {
           selected={filteredYear}
           onSaveFilterSelection={saveFilterSelectionHandler}
         />
-        <ExpensesChart expenses={filteredExpenses}/>
+        <ExpensesChart theExpenses={filteredExpenses}/>
         <ExpensesList items={filteredExpenses}/>
       </Card>
     </div>
